@@ -68,7 +68,8 @@ html {
 }
 .skill-card .skill-card__header {
   position: relative;
-  background-color: peachpuff;
+  background-color: peachpuff
+;
   height: 170px;
   margin: -20px -20px 20px -20px;
   -webkit-transition: height 0.5s;

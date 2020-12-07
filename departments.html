@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./vendor/bootstrap/css/bootstrap.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="fonts/iconic/css/material-design-iconic-font.min.css"
+    />
+    <link rel="stylesheet" href="./css/card.css" />
+    <link rel="stylesheet" href="./css/credits.css" />
+    <link rel="stylesheet" href="./css/submenu.css" />
+
+    <title>SVKM's IOT, Dhule</title>
+
+    <script type="text/javascript">
+      /// some script
+
+      // jquery ready start
+      $(document).ready(function () {
+        // jQuery code
+
+        //////////////////////// Prevent closing from click inside dropdown
+        $(document).on("click", ".dropdown-menu", function (e) {
+          e.stopPropagation();
+        });
+
+        // make it as accordion for smaller screens
+        if ($(window).width() < 992) {
+          $(".dropdown-menu a").click(function (e) {
+            e.preventDefault();
+            if ($(this).next(".submenu").length) {
+              $(this).next(".submenu").toggle();
+            }
+            $(".dropdown").on("hide.bs.dropdown", function () {
+              $(this).find(".submenu").hide();
+            });
+          });
+        }
+      }); // jquery end
+    </script>
+  </head>
+  <body>
+    <header class="section-header py-2 bg-light">
+      <div class="container">
+        <header class="blog-header py-2">
+          <div
+            class="row flex-nowrap justify-content-between align-items-center"
+          >
+            <div class="col-4 text-center">
+              <a class="blog-header-logo text-dark" href="#">
+                <img src="./img/logo.png" />
+              </a>
+            </div>
+          </div>
+        </header>
+      </div>
+    </header>
+    <!-- section-header.// -->
+    <!-- ========================= SECTION CONTENT ========================= -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-dark">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#main_nav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main_nav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-toggle="dropdown"
+              >
+                About
+              </a>
+
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#"> About SVKM </a></li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    About SVKM's IOT, Dhule
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"> Vision and Mission </a>
+                </li>
+                <div class="dropdown-divider"></div>
+                <li><a class="dropdown-item" href="#"> Affiliation </a></li>
+                <li><a class="dropdown-item" href="#"> Infrastructure </a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-toggle="dropdown"
+                >Academics</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item dropdown-toggle" href="#"
+                    >Departments</a
+                  >
+                  <ul class="submenu dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="">Computer Engineering</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href=""
+                        >Information Technology</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="">Mechnical Engineering</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="">Civil Engineering</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href=""
+                        >Electrical Engineering</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li><a class="dropdown-item" href="#"> Student Section </a></li>
+                <li>
+                  <a class="dropdown-item" href="#"> Faculty and Research </a>
+                </li>
+                <div class="dropdown-divider"></div>
+                <li>
+                  <a class="dropdown-item" href="#"> Training and Placement </a>
+                </li>
+                <li><a class="dropdown-item" href="#"> Achivements </a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-toggle="dropdown"
+                >News and Events</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">Important Announcements</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"> Provisional Dates </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"> Circulars </a>
+                </li>
+                <div class="dropdown-divider"></div>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    Monthly Teaching Schedule
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <form class="form-inline">
+        <input
+          class="form-control form-control-sm mr-sm-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button class="btn btn-sm btn-outline-light" type="submit">
+          Search
+        </button>
+        <a
+          class="btn btn-sm btn-outline-light"
+          href="./login_page.html"
+          role="button"
+          >Login/Sing Up</a
+        >
+      </form>
+      <!-- navbar-collapse.// -->
+    </nav>
+
+    <!--flex container-->
+
+    <!-- Footer -->
+    <footer class="page-footer font-small mdb-color pt-4 bg-dark text-white">
+      <!-- Footer Links -->
+      <div class="container text-center text-md-left">
+        <!-- Footer links -->
+        <div class="row text-center text-md-left mt-3 pb-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">
+              SVKM's IOT, Dhule
+            </h6>
+            <p>Affiliated to:</p>
+            <p>Dr. Babasaheb Ambedkar Technological University, Lonere</p>
+            <p>All India Council for Technical Education, Delhi</p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">About</h6>
+            <p>
+              <a href="#!" class="text-white">President's Message</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Principal's Message</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Vision ans Mission</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Affiliation</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
+            <p>
+              <a href="#!" class="text-white">Your Account</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Downloads</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Credits</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Help</a>
+            </p>
+          </div>
+
+          <!-- Grid column -->
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+            <p>
+              <i class="fa fa-home" aria-hidden="true"></i> Shri Vile Parle
+              Kelavani Mandal’s Institute Of Technology, Survey No. 499, Plot No
+              02, Behind Gurudwara, Mumbai Agra National Highway, Dhule -424
+              001, Maharahstra, India
+            </p>
+            <a href="mailto:IOTDhule@svkm.ac.in" class="text-white">
+              <p>
+                <i
+                  class="fa fa-envelope-o"
+                  aria-hidden="true"
+                  style="margin: 0; padding: 0"
+                ></i>
+                IOTDhule@svkm.ac.in
+              </p></a
+            >
+            <a href="tel:022 26171169" class="text-white">
+              <p>
+                <i
+                  class="fa fa-phone"
+                  aria-hidden="true"
+                  style="margin: 0; padding: 0"
+                ></i>
+                +91 02562-297801
+              </p></a
+            >
+            <a href="tel:02562-297601" class="text-white">
+              <p>
+                <i
+                  class="fa fa-phone"
+                  aria-hidden="true"
+                  style="margin: 0; padding: 0"
+                ></i>
+                +91 02562-297601
+              </p></a
+            >
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Footer links -->
+
+        <hr />
+
+        <!-- Grid row -->
+        <div class="row d-flex align-items-center">
+          <!-- Grid column -->
+          <div class="col-md-7 col-lg-8">
+            <!--Copyright-->
+            <p class="text-center text-md-left">
+              © 2020 Copyright:
+              <a href="#!" class="text-white">
+                <strong>SVKM's IOT, Dhule</strong>
+              </a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-5 col-lg-4 ml-lg-0">
+            <!-- Social buttons -->
+            <div class="">
+              <a
+                href="https://www.facebook.com/Svkmiot"
+                target="_blank"
+                class="fa fa-facebook text-white"
+              ></a>
+              <a
+                href="#"
+                target="_blank"
+                class="fa fa-twitter px-2 text-white"
+              ></a>
+              <a
+                href="#"
+                target="_blank"
+                class="fa fa-google px-2 text-white"
+              ></a>
+              <a
+                href="#"
+                target="_blank"
+                class="fa fa-linkedin px-2 text-white"
+              ></a>
+              <a
+                href="#"
+                target="_blank"
+                class="fa fa-youtube px-2 text-white"
+              ></a>
+              <a
+                href="#"
+                target="_blank"
+                class="fa fa-instagram px-2 text-white"
+              ></a>
+            </div>
+          </div>
+          <!-- Footer -->
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+      <!-- Footer Links -->
+    </footer>
+    <!-- Footer -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
